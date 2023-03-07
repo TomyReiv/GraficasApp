@@ -1,0 +1,12 @@
+<h1>Redes Sociales mas usadas</h1>
+<hr>
+<div class="alert alert-info" *ngIf="!data">
+    Cargando data....
+</div>
+<div class="row" *ngIf="data"> 
+        <div class="col contenedor">
+            <canvas baseChart class="chart" [data]="doughnutChartData" [type]="doughnutChartType">
+            </canvas>
+        </div>
+        <span class="float-end text-primary">Informacion en billones de usuarios</span>
+</div>
